@@ -63,8 +63,9 @@
         }
 
         .logo-img {
-            height: 50px;
-            margin-left: 10px;
+            height: 120px;
+            /* تكبير الشعار */
+            margin-left: 15px;
         }
 
         .logo-text {
@@ -75,12 +76,15 @@
         .logo-text-main {
             font-weight: 700;
             color: var(--primary);
-            font-size: 20px;
+            font-size: 28px;
+            /* تكبير النص */
         }
 
         .logo-text-sub {
             color: var(--dark);
             font-weight: 500;
+            font-size: 20px;
+            /* تكبير النص */
         }
 
         .menu {
@@ -307,20 +311,23 @@
         }
 
         .footer-logo-img {
-            height: 50px;
+            height: 150px;
+            /* تكبير الشعار في الفوتر */
             margin-bottom: 20px;
-            margin-left: 10px;
+            margin-left: 15px;
         }
 
         .footer-links {
             display: flex;
-            gap: 20px;
+            gap: 30px;
+            align-items: center;
         }
 
         .footer-links a {
             color: var(--light-bg);
             text-decoration: none;
             transition: color 0.3s;
+            font-size: 18px;
         }
 
         .footer-links a:hover {
@@ -331,7 +338,7 @@
             text-align: center;
             padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         /* Responsive design */
@@ -371,6 +378,15 @@
             .logo {
                 justify-content: center;
             }
+
+            /* الحفاظ على حجم الشعار في الشاشات الصغيرة مع ضبط التنسيق */
+            .logo-img {
+                height: 100px;
+            }
+
+            .footer-logo-img {
+                height: 120px;
+            }
         }
 
         /* Animation */
@@ -403,6 +419,18 @@
             display: flex;
             align-items: center;
         }
+
+        /* تعديلات إضافية للفوتر */
+        .footer-logo-text {
+            font-weight: 700;
+            color: var(--white);
+            font-size: 28px;
+        }
+
+        .footer-logo-subtext {
+            color: var(--light-bg);
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -412,7 +440,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo-container">
-                    <img src="Maydan.png" alt="Maydan Logo"  class="logo-img">
+                    <img src="Maydan.png" alt="Maydan Logo" class="logo-img">
                     <div class="logo-text">
                         <span class="logo-text-main">Maydan</span>
                         <span class="logo-text-sub">الميدان</span>
@@ -514,8 +542,8 @@
                     <div class="logo-container">
                         <img src="Maydan.png" alt="Maydan Logo" class="footer-logo-img">
                         <div class="logo-text">
-                            <span style="font-weight: 700; color: var(--white); font-size: 20px;">Maydan</span>
-                            <span style="color: var(--light-bg);">الميدان</span>
+                            <span class="footer-logo-text">Maydan</span>
+                            <span class="footer-logo-subtext">الميدان</span>
                         </div>
                     </div>
                 </div>
